@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+sed '/after.js/d' index.html |
+    sed -E 's;href="(css|files|apps|static);href="../\1;' > files/staff.html
